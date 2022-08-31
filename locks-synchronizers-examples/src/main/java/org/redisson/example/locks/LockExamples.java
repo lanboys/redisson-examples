@@ -34,6 +34,8 @@ public class LockExamples {
             public void run() {
                 RLock lock1 = redisson.getLock("lock");
                 lock1.lock();
+                lock1.lock();
+                lock1.lock();
                 lock1.unlock();
             };
         };

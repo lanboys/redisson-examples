@@ -23,7 +23,6 @@ import org.redisson.Redisson;
 import org.redisson.api.RExecutorService;
 import org.redisson.api.RMap;
 import org.redisson.api.RedissonClient;
-import org.redisson.api.WorkerOptions;
 import org.redisson.api.mapreduce.RCollator;
 import org.redisson.api.mapreduce.RCollector;
 import org.redisson.api.mapreduce.RMapReduce;

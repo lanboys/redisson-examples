@@ -20,6 +20,8 @@ import org.redisson.RedissonMultiLock;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 
+import java.io.IOException;
+
 public class MultiLockExamples {
 
     public static void main(String[] args) throws InterruptedException {
@@ -49,6 +51,15 @@ public class MultiLockExamples {
         RedissonMultiLock lock = new RedissonMultiLock(lock1, lock2, lock3);
         lock.lock();
         lock.unlock();
+
+        //try {
+        //
+        //    while (true) {
+        //       System.in.read();
+        //    }
+        //} catch (IOException e) {
+        //    throw new RuntimeException(e);
+        //}
     }
     
 }
